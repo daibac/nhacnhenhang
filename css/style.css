@@ -20,7 +20,7 @@ h2{
     line-height: 80px;
     color: #e9763c;
 }
-a{ text-decoration: none; }
+a{ text-decoration: none;color: #e9763c; }
 .clear-li{ list-style-type: none; }
 .column{ width:100%; float: left; padding: 0 15px;}
 .column-1{ width: 8%; }
@@ -78,6 +78,7 @@ a{ text-decoration: none; }
 	width: 100%;
 	height: auto;
 	position: fixed;
+	z-index: 9;
 }
 
 .menu_top{
@@ -226,22 +227,43 @@ nav#menu_nav:target .sub_menu li{
 }
 
 
+
+
+
 .img_details{
-	max-height: 420px;
+	max-height: 420px;	
 }
+
+
+
 
 .img_cover{	
 	text-align: center;
 	width: 100%;
 	max-width: 250px;
 	height: auto;
-	margin-bottom: 10px;
+	margin-bottom: 20px;
 }
 .img_cover a img{
 	text-align: center;
 	width: 100%;
 	height: auto;
+	transition: all 1s ease;
+	-webkit-transition: all 1s ease;
+	-moz-transition: all 1s ease;
+	-o-transition: all 1s ease;
 }
+
+.img_cover a img:hover{
+	transform: scale(1.1, 1.1);
+	-webkit-transform: scale(1.1, 1.1);
+	-moz-transform: scale(1.1, 1.1);
+	-o-transform: scale(1.1, 1.1);
+}
+
+
+
+
 .details{
 	padding-left: 30px;
 }
@@ -277,29 +299,33 @@ nav#menu_nav:target .sub_menu li{
 	width: 200%;
 }
 
-.main_list_1{
+.main_list{
 	width: 100%;
 	height: auto;	
 	overflow-x: scroll; 
 }
 
-.main_list_2{
-	width: 100%;
-	height: auto;	
-	overflow-x: scroll; 
+
+
+
+
+
+
+
+
+
+
+.details_list 
+{
+    height: 375px;
+    overflow: hidden;
 }
 
-.main_list_3{
-	width: 100%;
-	height: auto;	
-	overflow-x: scroll; 
-}
 
-.main_list_4{
-	width: 100%;
-	height: auto;	
-	overflow-x: scroll; 
-}
+
+
+
+
 
 
 
@@ -461,20 +487,16 @@ nav#menu_nav:target .sub_menu li{
 	.left{			width: 100%;	}
 	.img_cover {	   width: 100%;	}
 
-	#menu_nav .closed{
-					display: inline-block;
-					background-color: #92000070;	}
+	#menu_nav .closed{	display: inline-block;	}
 
 	#menu_nav ul{	height: auto;	}
 	#menu_nav ul li {	width: 100%;	}	
 	#menu_nav ul li .sub_menu li{
-					background-color: #666;
-					width: 145px;	}
+					width: 145px;
+					border:1px solid #0006;	}
 	#menu_nav ul li .sub_menu li a{		font-size: 1em;	}
 
-	#menu_nav ul li .sub_menu li:hover {	background-color: #7b7b7b;	}
-
-	.details {    		padding-left: 30px;	}
+	.details {    	padding-left: 30px;	}
 
 
 }
@@ -533,21 +555,13 @@ nav#menu_nav:target .sub_menu li{
 	}
 	#menu_nav ul li .sub_menu{ 
 	}
-	#menu_nav ul li .sub_menu li{
-		background-color: #666;
-		width: 145px;
-	}
 
 	#menu_nav ul li .sub_menu li a{
 		font-size: 1em;
 	}
-
-
-	#menu_nav ul li .sub_menu li:hover {	
-	background-color: #7b7b7b;
-	}
-
-
+		#menu_nav ul li .sub_menu li{
+					width: 145px;
+					border:1px solid #0006;	}
 
 
 

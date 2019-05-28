@@ -1,0 +1,48 @@
+*{margin: 0;padding: 0;}
+img{display: block;max-width:100%;}
+.dia-cd{
+    width:400px;
+	  margin: 0 auto;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 1px solid #ccc;
+    animation: xoayvong 20s linear 0s infinite;
+    -webkit-animation: xoayvong 20s linear 0s infinite;
+    -moz-animation: xoayvong 20s linear 0s infinite;
+    -o-animation: xoayvong 20s linear 0s infinite;
+}
+
+.rotate-wrap{
+	background: #fff;
+	text-align: center;
+	overflow: hidden;
+	margin: 40px auto;
+	width: 300px;
+}
+
+/* Chrome, Safari, Opera */ 
+@-webkit-keyframes xoayvong{
+	from{
+	        -webkit-transform:rotate(0deg);
+	        -moz-transform:rotate(0deg);
+	        -o-transform:rotate(0deg);
+	    }
+    to{
+	        -webkit-transform:rotate(360deg);
+	        -moz-transform:rotate(360deg);
+	        -o-transform:rotate(360deg);
+	}
+}
+/* chuẩn */ 
+@keyframes xoayvong {
+	from{
+	        -webkit-transform:rotate(0deg);
+	        -moz-transform:rotate(0deg);
+	        -o-transform:rotate(0deg);
+	    }
+    to{
+	        -webkit-transform:rotate(360deg);
+	        -moz-transform:rotate(360deg);
+	        -o-transform:rotate(360deg);
+	}
+}
